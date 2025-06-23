@@ -1,0 +1,44 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@playwright/test@^1.40.0": "1.53.1",
+    "npm:playwright@^1.40.0": "1.53.1"
+  },
+  "npm": {
+    "@playwright/test@1.53.1": {
+      "integrity": "sha512-Z4c23LHV0muZ8hfv4jw6HngPJkbbtZxTkxPNIg7cJcTc9C28N/p2q7g3JZS2SiKBBHJ3uM1dgDye66bB7LEk5w==",
+      "dependencies": [
+        "playwright"
+      ],
+      "bin": true
+    },
+    "fsevents@2.3.2": {
+      "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
+      "os": ["darwin"],
+      "scripts": true
+    },
+    "playwright-core@1.53.1": {
+      "integrity": "sha512-Z46Oq7tLAyT0lGoFx4DOuB1IA9D1TPj0QkYxpPVUnGDqHHvDpCftu1J2hM2PiWsNMoZh8+LQaarAWcDfPBc6zg==",
+      "bin": true
+    },
+    "playwright@1.53.1": {
+      "integrity": "sha512-LJ13YLr/ocweuwxyGf1XNFWIU4M2zUSo149Qbp+A4cpwDjsxRPj7k6H25LBrEHiEwxvRbD8HdwvQmRMSvquhYw==",
+      "dependencies": [
+        "playwright-core"
+      ],
+      "optionalDependencies": [
+        "fsevents"
+      ],
+      "bin": true
+    }
+  },
+  "remote": {
+    "https://deno.land/std@0.208.0/dotenv/mod.ts": "039468f5c87d39b69d7ca6c3d68ebca82f206ec0ff5e011d48205eea292ea5a6"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@playwright/test@^1.40.0",
+      "npm:playwright@^1.40.0"
+    ]
+  }
+}

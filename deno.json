@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.window"
+    ]
+  },
+  "imports": {
+    "playwright": "npm:playwright@^1.40.0",
+    "@playwright/test": "npm:@playwright/test@^1.40.0"
+  },
+  "tasks": {
+    "install": "deno run -A npm:playwright@^1.40.0 install chromium",
+    "screenshot": "deno run --allow-net --allow-read --allow-sys --allow-write --allow-env --allow-run screenshot.js",
+    "screenshot:debug": "deno run --allow-net --allow-read --allow-write --allow-env --allow-run screenshot.js --debug",
+    "codegen": "deno run --allow-net --allow-read --allow-write --allow-env --allow-run codegen.js"
+  }
+}
